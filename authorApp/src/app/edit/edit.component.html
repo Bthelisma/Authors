@@ -1,0 +1,7 @@
+<button [routerLink]="['/show']">Back to home</button>
+<form (submit)="onSubmit()">
+    <h2>Edit an Author</h2>
+    <label>Author Name:</label>
+    <input type="text" name="author.name" [(ngModel)]="author.name" />
+    <input type="submit" value="Sumbit author" />
+</form>
